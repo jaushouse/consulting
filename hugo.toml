@@ -10,6 +10,8 @@ title = 'JausHouse'
   calURL = 'https://cal.com/jaushouse/discovery'
   # Cloudflare Web Analytics — add your token after setup
   # cfAnalyticsToken = ''
+  # Cloudflare Turnstile site key (set secret key in CF Pages env as TURNSTILE_SECRET_KEY)
+  turnstileSiteKey = '0x4AAAAAAC3mO4DfnEgR83Ga'
 
 [taxonomies]
   tag = 'tags'

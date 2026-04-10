@@ -38,7 +38,16 @@ Not ready for a call? No problem. Tell us a little about your business and what 
   </div>
   <label for="email">Email</label>
   <input type="email" id="email" name="email" required>
+  <!-- Honeypot — hidden from real users, bots will fill it in -->
+  <div style="position:absolute;left:-9999px" aria-hidden="true">
+    <label for="website">Website</label>
+    <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+  </div>
   <label for="message">What's slowing your business down?</label>
   <textarea id="message" name="message" required></textarea>
+  {{ with .Site.Params.turnstileSiteKey }}
+  <div class="cf-turnstile" data-sitekey="{{ . }}" data-theme="dark"></div>
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+  {{ end }}
   <button type="submit" class="btn btn-primary">Send Message</button>
 </form>
