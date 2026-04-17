@@ -63,7 +63,7 @@ export async function onRequestPost(context) {
       },
       body: JSON.stringify({
         from: "JausHouse Contact <noreply@mail.jaushouse.com>",
-        to: ["brandon@jaushouse.com"],
+        to: ["info@jaushouse.com"],
         reply_to: email,
         subject: `New inquiry from ${name}${business ? ` (${business})` : ""}`,
         text: [

@@ -5,7 +5,7 @@ title = 'JausHouse'
 [params]
   author = 'Brandon Jaus'
   description = 'Software consulting for small businesses. We help you replace spreadsheets, manual processes, and disconnected tools with software that actually works together.'
-  email = 'brandon@jaushouse.com'
+  email = 'info@jaushouse.com'
   # Cal.com booking URL
   calURL = 'https://cal.com/jaushouse/discovery'
   # Cloudflare Web Analytics — add your token after setup
